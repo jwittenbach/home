@@ -3,7 +3,7 @@ message=$1
 hexo clean; hexo generate
 
 git add --all 
-git commit -m \"$message\"
+git commit -m "$message"
 commit_hash=`git log --oneline | awk 'NR==1{print $1}' | xargs git rev-parse`
 commit_url=https://github.com/jwittenbach/home/commits/$commit_hash
 
