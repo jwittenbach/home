@@ -4,10 +4,18 @@ date: 2019-07-27 12:48:02
 tags:
 ---
 
-# first section
+## first section
 
 some test
 
-# second section
+### even a subsection
+
+```python
+import numpy as np
+
+a = np.arange(12).reshape(3, 4)
+```
+
+## second section
 
 more text
